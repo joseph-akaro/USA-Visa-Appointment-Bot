@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Visa Appointment Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>USA Visa Appointment Bot</h1>
+        <p>Enter your credentials and desired location to find available appointment slots.</p>
+        <form action="/schedule" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Consulate Location:</label>
+                <select id="location" name="location" required>
+                    <option value="">Select a Location</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="new-delhi">New Delhi</option>
+                </select>
+            </div>
+            <button type="submit">Find Appointments</button>
+        </form>
+    </div>
+</body>
+</html>
